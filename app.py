@@ -19,12 +19,12 @@ units_grade_1st = st.number_input("Rata-rata nilai semester 1", min_value=0.0, m
 
 # Buat dataframe input
 input_data = pd.DataFrame({
-    'Age_at_enrollment': [age],
-    'Previous_qualification_grade': [prev_grade],
-    'Admission_grade': [admission_grade],
-    'Curricular_units_1st_sem_enrolled': [units_enrolled_1st],
-    'Curricular_units_1st_sem_approved': [units_approved_1st],
-    'Curricular_units_1st_sem_grade': [units_grade_1st]
+    'AdmissionGrade': [admission_grade],
+    'PreviousQualificationGrade': [prev_grade],
+    'EntranceExamScore': [age],
+    'CurricularUnits1stSemCredited': [units_enrolled_1st],
+    'CurricularUnits1stSemApproved': [units_approved_1st],
+    'CurricularUnits1stSemGrade': [units_grade_1st]
 })
 
 # Prediksi
