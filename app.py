@@ -14,11 +14,11 @@ marital_status = st.selectbox("Status pernikahan", [0, 1, 2, 3])  # Sesuai label
 application_mode = st.selectbox("Mode Aplikasi Masuk", [1, 5, 15, 16])
 application_order = st.slider("Urutan pilihan program studi", 1, 10, 1)
 course = st.selectbox("Program Studi", [33, 171, 8014])  # Sesuaikan label encoding
-admission_grade = st.number_input("Nilai ujian masuk", 0.0, 200.0, 120.0)
+admission_grade = st.number_input("Nilai ujian masuk", 0.0, 200.0, 120.0, format="%g")
 age = st.number_input("Umur saat masuk", 16, 60, 18)
 units_1_enrolled = st.number_input("Mata kuliah semester 1 diambil", 0, 10, 5)
 units_1_approved = st.number_input("Mata kuliah semester 1 lulus", 0, 10, 4)
-units_1_grade = st.number_input("Rata-rata nilai semester 1", 0.0, 20.0, 12.0)
+units_1_grade = st.number_input("Rata-rata nilai semester 1", 0.0, 20.0, 12.0, format="%g")
 
 # ========== Default untuk Fitur Lain ========== #
 default = {
